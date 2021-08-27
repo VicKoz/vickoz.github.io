@@ -1,0 +1,74 @@
+/* a:active {color: aqua} */
+a:visited {color: #36c}	/* teal purple */
+a:hover {color: #09f; 	/* font-style: italic; */ text-decoration: overline}
+a img {border: none}
+
+body {background-image: url(bg_white.jpg); color: #003; font-size: smaller; font-family: verdana; margin: 1em 1.5em; scrollbar-track-color: #eee; scrollbar-3Dlight-color: #fff; scrollbar-highlight-color: #ddd; scrollbar-face-color: #ddd; scrollbar-arrow-color: #369; scrollbar-shadow-color: #ddd; scrollbar-darkshadow-color: #ccc; /*scrollbar-base-color: #eee*/}
+
+dl {margin: .5em 0}
+dt {color: #069; font-weight: normal; font-style: italic; margin-top: .5em}
+dd {margin-left: 4em; text-align: justify}
+
+h1 {color: #9cf; font-family: verdana; font-style: oblique; font-weight: bold; margin: 0.5em 0 -1em; padding: 0 .5em; text-align: left}
+/* h1 {color: #f90; font-weight: lighter; margin: .5em 0; padding: 0 .5em; text-align: left} */
+h2 {color: #f90; font-family: verdana; font-weight: normal; margin: .5em 0; padding: 0 .75em; text-align: left}
+h3 {color: #369; font-family: verdana; font-weight: normal; margin: .5em 0; padding: 0 1em}
+h4 {color: #66C; font-family: verdana; font-weight: bold; font-size: 100%; margin: .75em 0 .25em; padding: 0 1em}
+h5 {color: #369; font-family: verdana; font-weight: normal; font-size: 100%; margin: .75em 0 .25em; padding: 0 1em}
+
+hr {color: silver; height: 1px}
+p {text-align: justify; text-indent: 1em; margin: 0 0 .25em 0}
+
+/*  span =  */
+.att {font-weight: bold}
+.hot {font-weight: bold; color: darkcyan}
+.date {color: #069; /* font-style: italic; */ font-weight: bold}
+/* .date:before {content: "["} */
+/* .date:after {content: "]"} */
+.firm {color: #603; font-weight: normal}
+.name {color: #039; font-weight: normal; font-style: italic}
+.note {color: gray; font-style: italic}
+/* .pad {background: #eee; border: 1px solid gray; margin: .5em 0; padding: .5em} */
+.numb {color: #c60; font-weight: bolder}
+.pad {background: #eee; border: none; margin: .5em 0; padding: .5em}
+.product {color: #C69; font-weight: bolder; font-style: normal}
+.right {text-align: right}
+.strik {text-decoration: line-through; color: gray}
+.warn {color: #c03}
+.cold {color: #30c}
+
+img {cursor: crosshair; margin: .5em}
+/* img {cursor: crosshair; margin: 10px} */
+img.inline {margin: 0 .5em 0 0}
+
+pre {background: #ddd; font-size: 100%; margin: 1em 1em; padding: 0.5em 0.5em}
+
+li {margin-top: 0; margin-bottom: 0}
+ul {list-style: square inside}
+/* ol, ul {margin: .5em .75em; list-style: inside} */
+/* ol, ul {margin: .5em 0; padding: 0 1em 0.5em 2.3em; list-style: outside} */
+ol, ul {margin: .5em 0; padding: 0 1em .5em 2.3em}
+.code {background: #ddd; list-style: none; font-family: courier new; /* font-size: medium */}
+p.code {text-indent: 0em; margin: 1em 1em; padding: 0.5em 0.5em}
+ul.none {list-style: none; margin: 0; padding: 0 1em 0.5em 1em}
+ul.wide {list-style: none; margin: 0; padding: 0}
+ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none} /* вложенные списки */
+
+table {background: #eee; border: 1px solid gray; /* show; font-size: 100%; */ margin: .5em 0}
+caption {color: #369; font-weight: normal; font-size: smaller; text-align: left}
+thead td {color: #369; font-size: smaller}
+th {border: 1px solid gray; color: #369; font-style: normal; font-weight: normal; font-size: smaller; padding: 0 .5em; text-align: left; vertical-align: top}
+td {border: 1px solid silver; font-size: smaller; padding: 0 .5em; vertical-align: top}
+table.pad {background-color: #eee; border: none; padding: .5em}
+table.pad td {border: none}
+table.pad th {border: none}
+table.none {background-color: transparent; border: none; padding: .5em}
+table.none td {border: none}
+table.none th {border: none}
+table.light {background-color: #eee; border: none}
+table.light th {border: 1px solid #ddd}
+table.light td {border: 1px solid #ddd}
+
+/* h1, h2, h3, h4, p, div, dl, dt, dd, img, ol, ul, li, caption, th, td, table.none td, table.none th, table.pad td, table.pad th {border: 1px solid silver} */
+
+

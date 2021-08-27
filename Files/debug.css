@@ -1,0 +1,132 @@
+/*a:active {color: aqua}*/
+a:visited {color: #36c}/*teal purple*/
+a:hover {color: #09f; font-style: italic; text-decoration: overline}
+a img {border: none}
+
+body {background-image: url(bg_white.jpg); color: #003; font-size: smaller; font-family: verdana; margin: 1em 1.5em; scrollbar-track-color: #eee; scrollbar-3Dlight-color: #fff; scrollbar-highlight-color: #ddd; scrollbar-face-color: #ddd; scrollbar-arrow-color: #369; scrollbar-shadow-color: #ddd; scrollbar-darkshadow-color: #ccc; /*scrollbar-base-color: #eee*/}
+
+dl {margin: .5em 0}
+dt {color: #069; font-weight: normal; font-style: italic; margin-top: .5em}
+dd {margin-left: 1em; text-align: justify}
+
+h1 {color: #9cf; font-style: oblique; font-weight: bold; margin: 0.5em 0 -1em; padding: 0 .5em; text-align: left}
+/*h1 {color: #f90; font-weight: lighter; margin: .5em 0; padding: 0 .5em; text-align: left}*/
+h2 {color: #f90; font-weight: normal; margin: .5em 0; padding: 0 .75em; text-align: left}
+h3 {color: #369; font-weight: lighter; margin: .5em 0; padding: 0 1em}
+h4 {color: #369; font-weight: bold; font-size: 100%; margin: .75em 0 .25em; padding: 0 1em}
+h5 {color: #369; font-family: verdana; font-weight: normal; font-size: 100%; margin: .75em 0 .25em; padding: 0}
+
+
+hr {color: silver; height: 1px}
+p {text-align: justify; text-indent: 1em; margin: 0 0 .25em 0}
+.att {font-weight: bold}
+.date {color: #069; /*font-style: italic;*/ font-weight: bold}
+/*.date:before {content: "["}*/
+/*.date:after {content: "]"}*/
+.name {color: brown; font-weight: bold}
+.note {color: gray; font-style: italic} 
+/*.pad {background: #eee; border: 1px solid gray; margin: .5em 0; padding: .5em}*/
+.pad {background: #eee; border: none; margin: .5em 0; padding: .5em}
+.right {text-align: right}
+.strik {text-decoration: line-through}
+.warn {color: #c03}
+.cold {color: #30c}
+
+img {cursor: crosshair; margin: .5em}
+/*img {cursor: crosshair; margin: 10px}*/
+img.inline {margin: 0 .5em 0 0}
+
+li {margin-top: 0; margin-bottom: 0}
+ul {list-style: square inside}
+/*ol, ul {margin: .5em .75em; list-style: inside}*/
+ol, ul {margin: .5em 0; padding: 0 1em 0 2.3em; list-style: outside}
+ul.none {list-style: none; margin: 0; padding: 0 1em}
+ul.wide {list-stule: none; margin: 0; padding: 0}
+ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none} /* вложенные списки */
+
+table {background: #eee; border: 1px solid gray; show; /*font-size: 100%;*/ margin: .5em 0}
+caption {color: #369; font-weight: bold; font-size: smaller; text-align: left}
+thead td {color: #369; font-size: smaller}
+th {border: 1px solid gray; color: #369; font-style: normal; font-weight: normal; font-size: smaller; padding: 0 .5em; text-align: left; vertical-align: top}
+td {border: 1px solid silver; font-size: smaller; padding: 0 .5em; vertical-align: top}
+table.pad {background-color: #eee; border: none; padding: .5em}
+table.pad td {border: none}
+table.pad th {border: none}
+table.none {background-color: transparent; border: none; padding: .5em}
+table.none td {border: none}
+table.none th {border: none}
+table.light {background-color: #eee; border: none}
+table.light th {border: 1px solid #ddd}
+table.light td {border: 1px solid #ddd}
+
+h1, h2, h3, h4, p, div, dl, dt, dd, img, ol, ul, li, caption, th, td, table.none td, table.none th, table.pad td, table.pad th {border: 1px solid silver}
+
+/*
+PRE {FONT-FAMILY: monospace; FONT-SIZE: 90%; MARGIN-LEFT: 1em}
+ADDRESS {FONT-STYLE: italic; TEXT-ALIGN: right}
+IMG {BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px}
+.toc {TEXT-INDENT: 0px}
+P.toc-line {MARGIN-BOTTOM: 1em; MARGIN-TOP: 1em; TEXT-INDENT: 0px}
+A.noxref:link {	COLOR: black}
+A.noxref:visited {COLOR: black}
+DIV.example A:link {COLOR: maroon}
+DIV.example A:visited {COLOR: maroon}
+DIV.deprecated-html-example A:link {COLOR: red}
+DIV.deprecated-html-example A:visited {COLOR: red}
+.note A:link {COLOR: green}
+.note A:visited {COLOR: green}
+A.propdef-title {BACKGROUND: yellow}
+A.descdef-title {BACKGROUND: green; COLOR: yellow}
+DIV.propdef {MARGIN: 1.2em 0px}
+DIV.example {	COLOR: maroon}
+PRE.example {	COLOR: maroon}
+PRE.illegal-example {COLOR: red}
+DIV.illegal-example {COLOR: red}
+DIV.illegal-example P {COLOR: black}
+DIV.html-example {COLOR: maroon}
+PRE.html-example {COLOR: maroon}
+PRE.illegal-html-example {COLOR: red}
+DIV.illegal-html-example {COLOR: red}
+DIV.illegal-html-example P {COLOR: black}
+PRE.deprecated-html-example {COLOR: red}
+DIV.deprecated-html-example {COLOR: red}
+DIV.deprecated-html-example P {COLOR: black}
+DIV.xml-example {COLOR: maroon}
+PRE.xml-example {COLOR: maroon}
+PRE.illegal-xml-example {COLOR: red}
+DIV.illegal-xml-example {COLOR: red}
+DIV.illegal-xml-example P {COLOR: black}
+DIV.dtd-example {COLOR: maroon}
+PRE.dtd-example {COLOR: maroon}
+PRE.illegal-dtd-example {COLOR: red}
+DIV.illegal-dtd-example {COLOR: red}
+DIV.illegal-dtd-example P {COLOR: black}
+.note {COLOR: green; FONT-WEIGHT: bold; MARGIN: 1em}
+.normref {COLOR: red}
+.informref {COLOR: green}
+DIV.propdef TH {TEXT-ALIGN: right}
+DIV.descdef TH {TEXT-ALIGN: right}
+UL.toc {LIST-STYLE: none}
+OL.toc {LIST-STYLE: none}
+DIV.toc UL UL {MARGIN-LEFT: 0px}
+DIV.toc OL OL {MARGIN-LEFT: 0px}
+DIV.toc UL UL UL {MARGIN-LEFT: 1em}
+DIV.toc OL OL OL {MARGIN-LEFT: 1em}
+DIV.toc UL UL UL UL {MARGIN-LEFT: 0px}
+DIV.toc OL OL OL OL {MARGIN-LEFT: 0px}
+LI.tocline1 {FONT-WEIGHT: bold}
+LI.tocline2 {FONT-WEIGHT: normal}
+LI.tocline4 {FONT-STYLE: italic}
+UL.index {LIST-STYLE: none}
+S {COLOR: red; TEXT-DECORATION: line-through}
+DEL {COLOR: red; TEXT-DECORATION: line-through}
+U {BACKGROUND: #bfa; TEXT-DECORATION: underline}
+INS {BACKGROUND: #bfa; TEXT-DECORATION: underline}
+DIV.figure {MARGIN: 2.5em 0px; TEXT-ALIGN: center}
+P.caption {COLOR: #088; FONT-SIZE: 90%; FONT-STYLE: italic; FONT-WEIGHT: bold; MARGIN: 1.5em 25% 0px; TEXT-ALIGN: center}
+CAPTION {COLOR: #088; FONT-SIZE: 90%; FONT-STYLE: italic; FONT-WEIGHT: bold; MARGIN: 1.5em 25% 0px; TEXT-ALIGN: center}
+DIV.toc {TEXT-ALIGN: left}
+UL.index {TEXT-ALIGN: left}
+DT {TEXT-ALIGN: left}
+SUP {FONT-SIZE: 80%; VERTICAL-ALIGN: super}
+*/
