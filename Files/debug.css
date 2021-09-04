@@ -59,7 +59,31 @@ table.light {background-color: #eee; border: none}
 table.light th {border: 1px solid #ddd}
 table.light td {border: 1px solid #ddd}
 
-h1, h2, h3, h4, p, div, dl, dt, dd, img, ol, ul, li, caption, th, td, table.none td, table.none th, table.pad td, table.pad th {border: 1px solid silver}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 400px 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap:0.5em;
+}
+
+.grid > * {
+	background-color: darkgray;
+	color: white;
+	padding: 2em;
+	border-radius: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+div {border: 1px dotted aqua}
+h1, h2, h3, h4, h5, h6 {border: 1px dotted orange}
+p, dl, dt, dd, img, ol, ul, li, caption, th, td, table.none td, table.none th, table.pad td, table.pad th {border: 1px dotted silver}
 
 /*
 PRE {FONT-FAMILY: monospace; FONT-SIZE: 90%; MARGIN-LEFT: 1em}
