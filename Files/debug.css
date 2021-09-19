@@ -1,23 +1,42 @@
 /*a:active {color: aqua}*/
-a:visited {color: #36c}/*teal purple*/
-a:hover {color: #09f; font-style: italic; text-decoration: overline}
+a:visited {color: #36c} /*teal purple*/
+a:hover {color: #09f; font-style: regular; text-decoration: overline}
 a img {border: none}
 
-body {background-image: url(bg_white.jpg); color: #003; font-size: smaller; font-family: verdana; margin: 1em 1.5em; scrollbar-track-color: #eee; scrollbar-3Dlight-color: #fff; scrollbar-highlight-color: #ddd; scrollbar-face-color: #ddd; scrollbar-arrow-color: #369; scrollbar-shadow-color: #ddd; scrollbar-darkshadow-color: #ccc; /*scrollbar-base-color: #eee*/}
+body {
+	background-image: url(bg_white.jpg);
+	color: #003;
+	font-size: smaller;
+	font-family: verdana;
+	/* margin: 1em 1.5em; */
+	padding: 0;
+	scrollbar-track-color: #eee;
+	scrollbar-3Dlight-color: #fff;
+	scrollbar-highlight-color: #ddd;
+	scrollbar-face-color: #ddd;
+	scrollbar-arrow-color: #369;
+	scrollbar-shadow-color: #ddd;
+	scrollbar-darkshadow-color: #ccc;
+	/*scrollbar-base-color: #eee*/
+}
 
 dl {margin: .5em 0}
 dt {color: #069; font-weight: normal; font-style: italic; margin-top: .5em}
 dd {margin-left: 1em; text-align: justify}
 
-h1 {color: #9cf; font-style: oblique; font-weight: bold; margin: 0.5em 0 -1em; padding: 0 .5em; text-align: left}
-/*h1 {color: #f90; font-weight: lighter; margin: .5em 0; padding: 0 .5em; text-align: left}*/
-h2 {color: #f90; font-weight: normal; margin: .5em 0; padding: 0 .75em; text-align: left}
-h3 {color: #369; font-weight: lighter; margin: .5em 0; padding: 0 1em}
+h1 {
+	color: #9cf; font-style: oblique; font-weight: bold; 
+	margin: 0 0; padding: 0 0.5em; text-align: left
+}
+/* h1 {color: #9cf; font-weight: lighter; margin: .5em 0; padding: 0 .5em; text-align: left} */
+h2 {color: #f90; font-weight: normal; margin: 0 0; padding: 0 0.5em; text-align: left}
+h3 {color: #369; font-weight: lighter; margin: 0.5em 0; padding: 0 1em}
 h4 {color: #369; font-weight: bold; font-size: 100%; margin: .75em 0 .25em; padding: 0 1em}
 h5 {color: #369; font-family: verdana; font-weight: normal; font-size: 100%; margin: .75em 0 .25em; padding: 0}
 
 
-hr {color: silver; height: 1px}
+hr {color: silver; height: 1px; margin: 2px;}
+/* hr {color: black; height: 2px} */
 p {text-align: justify; text-indent: 1em; margin: 0 0 .25em 0}
 .att {font-weight: bold}
 .date {color: #069; /*font-style: italic;*/ font-weight: bold}
@@ -36,8 +55,15 @@ img {cursor: crosshair; margin: .5em}
 /*img {cursor: crosshair; margin: 10px}*/
 img.inline {margin: 0 .5em 0 0}
 
-li {margin-top: 0; margin-bottom: 0}
-ul {list-style: square inside}
+li {
+	margin: 0;
+	padding: 0.25em;
+}
+ul {
+	list-style: square inside;
+	/* margin: 0.25em; */
+	padding: 0.25em;
+}
 /*ol, ul {margin: .5em .75em; list-style: inside}*/
 ol, ul {margin: .5em 0; padding: 0 1em 0 2.3em; list-style: outside}
 ul.none {list-style: none; margin: 0; padding: 0 1em}
@@ -59,31 +85,76 @@ table.light {background-color: #eee; border: none}
 table.light th {border: 1px solid #ddd}
 table.light td {border: 1px solid #ddd}
 
-.grid {
+.container {
 	display: grid;
-	grid-template-columns: 1fr 400px 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap:0.5em;
+	grid-template-areas:
+		"title head help"
+		"hline hline hline"
+		"navhead mainhead asidehead"
+		"nav main aside"
+		"foot foot foot";
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: auto 10px auto 1fr 60px;
+	grid-gap: 0 0.4em;
+	/* border-radius: 0.5em; */
+	--gradstop: #ececec;
+	color: black;
+	padding: 0.5em;
+	margins: 0 0.5em;
 }
 
-.grid > * {
-	background-color: darkgray;
-	color: white;
-	padding: 2em;
-	border-radius: 0.5em;
+.title, .head, .help {
+	background-image: linear-gradient(to bottom, white, var(--gradstop));
+	margins: 0 0.5em;
 }
 
+.hline {
+	grid-column: span 3;
+	grid-row: span 1;
+	padding: 0;
+	margin: 0;
+	/* border-radius: 2px; */
+	background-image: 
+		linear-gradient(to bottom, var(--gradstop), lightgray, var(--gradstop));
+}
 
+.navhead, .mainhead, .asidehead {
+	background-image: 
+		linear-gradient(to bottom, var(--gradstop), white);
 
+}
+.main {
+	background-color: white;
+	background-image:
+		/* linear-gradient(to bottom, var(--gradstop) 0%, white 5%, white 95%, var(--gradstop) 100%); */
+}
 
+.foot {
+	background-image: linear-gradient(to bottom, white, var(--gradstop));
+}
 
+.button {
+	margin: 0.25em;
+	padding: 0.25em;
+}
 
+.button:hover {
+	background-image: linear-gradient(to bottom, white, var(--gradstop));
+	border-radius: 0.25em;
+	font-style: normal;
+	text-decoration: none;
+}
 
+.button:active {
+	background-image: linear-gradient(to bottom, var(--gradstop), white);
+}
 
 
 div {border: 1px dotted aqua}
 h1, h2, h3, h4, h5, h6 {border: 1px dotted orange}
-p, dl, dt, dd, img, ol, ul, li, caption, th, td, table.none td, table.none th, table.pad td, table.pad th {border: 1px dotted silver}
+p, dl, dt, dd, img, ol, ul, li, caption, th, td, 
+table.none td, table.none th, table.pad td, table.pad th {border: 1px dotted silver}
+
 
 /*
 PRE {FONT-FAMILY: monospace; FONT-SIZE: 90%; MARGIN-LEFT: 1em}
