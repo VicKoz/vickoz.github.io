@@ -7,14 +7,13 @@
   */
 
 body {
-	background-image: url(bg_white.jpg);
 	color: #003;
 	font-size: smaller;
 	font-family: verdana;
-	--ahover: #3399FF;
-	--avisit: #9933FF;
-	--gradstop: #ddd;
-	--gradmid: #eee;
+	--ahover: #39F;
+	--avisit: #93F;
+	--gradstop: #DDD;
+	--gradmid: #EEE;
 	/* margin: 1em 1.5em; */
 	padding: 0;
 	scrollbar-track-color: #eee;
@@ -144,20 +143,25 @@ table.light td {border: 1px solid #ddd}
 	grid-template-columns: 1fr 4fr 1fr;
 	/* grid-template-rows: 60px 10px auto 10px 60px; */
 	/* grid-template-rows: 6% 1% 85% 1% 6%; */
-	grid-template-rows: 6vh 1vh 82.3vh 1vh 6vh;
+	grid-template-rows: 6vh 1vh 82.0vh 1vh 6vh;
 	grid-gap: 0 0.2em;
 	/* border-radius: 0.5em; */
 	/* --gradstop: #ececec; */
 	--gradstop: #ddd;
 	--gradline: #aaa;
 	color: black;
-	padding: 0.5em;
-	margin: 0 0;
+	padding: 0.2em;
+	margin: 0.25em 0;
 }
 
 .title, .head, .help {
 	background-image: linear-gradient(to bottom, white, var(--gradstop));
 	padding: 0.25em 0.5em;
+	
+}
+
+.title {
+	padding: 0;
 }
 
 /*
@@ -186,7 +190,7 @@ table.light td {border: 1px solid #ddd}
 .nav, .main, .aside {
 	background-color: white;
 	background-image:
-	linear-gradient(to bottom, var(--gradstop) 0%, white 15%, white 85%, var(--gradstop) 100%); */
+	linear-gradient(to bottom, var(--gradstop) 0%, white 8%, white 92%, var(--gradstop) 100%); */
 	margin: 0.25em 0.5em;
 	overflow-y: auto;
 }
@@ -198,8 +202,8 @@ table.light td {border: 1px solid #ddd}
 }
 
 .button {
-	margin: 0.25em;
-	padding: 0.25em;
+	margin: 0.4em;
+	padding: 0.20em;
 	border-radius: 0.25em;
 	font-style: normal;
 }
@@ -220,11 +224,11 @@ table.light td {border: 1px solid #ddd}
 
 /*  For debug (make visual borders) uncomment tags below  ____________________*/
 
-/*
+
 div {border: 1px dotted aqua}
 h1, h2, h3, h4, h5, h6 {border: 1px dotted orange}
 p, dl, dt, dd, img, ol, ul, li, caption, th, td, 
 table.none td, table.none th, table.pad td, table.pad th {border: 1px dotted silver}
-*/
+
 
 
