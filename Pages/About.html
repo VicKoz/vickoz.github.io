@@ -9,10 +9,8 @@
 	</style>
 </head>
 
+<!------------------------------------------------------------------------------>
 <body>
-
-<!-- Комментарий -->
-
 
 <div class=container>
 	<div class="title">
@@ -36,24 +34,37 @@
 	<nav>
 	<h3> Содержание </h3>
 	<ul class="none">
-		<li><a href="VkHardware.htm" class="button"> Компьютер </a>
-		<li><a href="VkSettings.htm" class="button"> Настройки </a>
-		<li><a href="VkSoftware.htm" class="button"> Программы </a>
-		<li><a href="ViKo_MultiMedia.htm" class="button"> Мультимедиа </a>
+		<li><a href="#purpose" class="button"> Назначение </a>
+		<li><a href="#tasks" class="button"> Задачи </a>
+		<li><a href="#notes" class="button"> Заметки </a>
 	</ul>
 	</nav>
 	</div>
 
-	<div class="main">
+<!------------------------------------------------------------------------------>
+<div class="main">
 
-<h3> Задачи </h3>
+<h3><a name="purpose"></a> Назначение </h3>
+<p>	На своём сайте я хочу сохранить информацию о всех сферах, которые мне интересны
+	или нужны. В первую очередь это будет справочник, который буду использовать 
+	для работы.
+<p> Здесь я храню заметки по созданию данного сайта.
 
+<h3><a name="tasks"></a> Задачи </h3>
 <p class="date"> 2021.10.30
 <p>	Сделать шаблон стандартной страницы. Чтобы содержала всё необходимое, и 
 	было определено место для наполнения информацией.
+<p>	Посмотрев ролик, как играть в Warcraft 3, хочу сохранить рекомендации в одной
+	из страниц своего сайта.
 
-	</div>
+<h3><a name="notes"></a> Заметки </h3>
+<p class="date"> 2021.10.30
+<p>	Похоже, JavaScript работают на GitHub. Буду использовать по мере необходимости.
+	Это называется Bookmarklet, наверное.
 
+</div>
+
+<!------------------------------------------------------------------------------>
 	<div class="aside">
 	<h3> Ссылки </h3>
 	<ul class="none">
@@ -66,10 +77,13 @@
 	<div class="hline">  </div>
 
 	<div class="foot">nfoot</div>
-	<div class="foot">mfoot</div>
+	<div class="foot">
+	<script type="text/javascript">
+	document.write(Date());
+	</script>
+	</div>
 
 	<div class="foot">
-<!--	<a class = button href = "/Pages/About.html"> О проекте </a> -->
 	<a class="button" href="javascript:history.back()"> Вернуться назад </a>
 	</div>
 
