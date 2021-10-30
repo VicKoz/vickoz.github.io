@@ -55,20 +55,31 @@ h1 {
 h2 {
 	color: #f90; 
 	font-weight: normal; 
-	margin: 0 0; padding: 0 0.25em; 
+	margin: 0 0; 
+	padding: 0 0.25em; 
 	text-align: left 
 }
 
-h3 {color: #369; font-weight: lighter; margin: 0.5em 0; padding: 0 1em}
+h3 {
+	color: #369; 
+	font-weight: lighter; 
+	margin: 0.5em 0; 
+	padding: 0 1em
+}
 h4 {color: #369; font-weight: bold; font-size: 100%; margin: .75em 0 .25em; padding: 0 1em}
 h5 {color: #369; font-family: verdana; font-weight: normal; font-size: 100%; margin: .75em 0 .25em; padding: 0}
 
 
 hr {color: silver; height: 1px; margin: 2px;}
 /* hr {color: black; height: 2px} */
-p {text-align: justify; text-indent: 1em; margin: 0 0 .25em 0}
+
+p {
+	text-align: justify;
+	text-indent: 1em;
+	margin: 0 0.25em .25em 0.25em
+}
 .att {font-weight: bold}
-.date {color: #069; /*font-style: italic;*/ font-weight: bold}
+.date {color: #069; font-style: italic; /* font-weight: bold */}
 /*.date:before {content: "["}*/
 /*.date:after {content: "]"}*/
 .name {color: brown; font-weight: bold}
@@ -127,11 +138,13 @@ table.light td {border: 1px solid #ddd}
 	grid-template-areas:
 		"title head help"
 		"hline hline hline"
-		"navhead mainhead asidehead"
 		"nav main aside"
-		"foot foot foot";
+		"hline hline hline"
+		"nfoot mfoot sfoot";
 	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: auto 10px auto 1fr 60px;
+	/* grid-template-rows: 60px 10px auto 10px 60px; */
+	/* grid-template-rows: 6% 1% 85% 1% 6%; */
+	grid-template-rows: 6vh 1vh 82.3vh 1vh 6vh;
 	grid-gap: 0 0.2em;
 	/* border-radius: 0.5em; */
 	/* --gradstop: #ececec; */
@@ -173,13 +186,15 @@ table.light td {border: 1px solid #ddd}
 .nav, .main, .aside {
 	background-color: white;
 	background-image:
-		/* linear-gradient(to bottom, var(--gradstop) 0%, white 5%, white 95%, var(--gradstop) 100%); */
+	linear-gradient(to bottom, var(--gradstop) 0%, white 15%, white 85%, var(--gradstop) 100%); */
 	margin: 0.25em 0.5em;
+	overflow-y: auto;
 }
 
 .foot {
-	background-image: linear-gradient(to bottom, white, var(--gradstop));
+	background-image: linear-gradient(to bottom, var(--gradstop), white);
 	padding: 0 0.5em;
+	/* position: absolute; bottom: 0; */
 }
 
 .button {
@@ -203,13 +218,13 @@ table.light td {border: 1px solid #ddd}
 }
 
 
-/*  For debug (make visual borders) uncomment this part below  ________________*/
+/*  For debug (make visual borders) uncomment tags below  ____________________*/
 
 /*
 div {border: 1px dotted aqua}
 h1, h2, h3, h4, h5, h6 {border: 1px dotted orange}
 p, dl, dt, dd, img, ol, ul, li, caption, th, td, 
 table.none td, table.none th, table.pad td, table.pad th {border: 1px dotted silver}
-  */
+*/
 
 
