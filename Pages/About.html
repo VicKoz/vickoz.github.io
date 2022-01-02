@@ -4,93 +4,152 @@
 	<title> VicKoz Site </title>
 	<meta charset="utf-8">
 	<meta name="author" lang="ru" content="VicKoz">
-	<style>
-		@import "../Files/Styles.css";
-	</style>
+	<link href="../Files/Styles.css" rel="stylesheet" id="theme-link">
 </head>
 
 <!------------------------------------------------------------------------------>
 <body>
 
 <div class=container>
+
+<!--  title  ------------------------------------------------------------------->
 	<div class="title">
 	<h1> VicKoz </h1>
 	<h2 style="margin: -0.75em 0 0.25em 1em"> Archives </h2>
 	</div>
-	
+
+<!--  head  -------------------------------------------------------------------->
 	<div class="head">
 	<h2> О проекте </h2>
 	</div>
-	
+
+<!--  help  -------------------------------------------------------------------->
 	<div class="help">
 <!--	<a href="/Pages/help.html" class="button"> Справка </a> -->
-	<a title="Структура сайта" class="button" href="Index.html"> Справка </a>
+
 	</div>
 
+<!------------------------------------------------------------------------------>
 	<div class="hline">
 	</div>
 
+<!--  nav  --------------------------------------------------------------------->
 	<div class="nav">
 	<nav>
-	<h3> Содержание </h3>
+	<h3><a name="content"></a> Содержание </h3>
 	<ul class="none">
-		<li><a href="#purpose" class="button"> Назначение </a>
-		<li><a href="#tasks" class="button"> Задачи </a>
-		<li><a href="#notes" class="button"> Заметки </a>
+		<li><a href="#purpose" class="a-button"> Назначение </a>
+		<li><a href="#tasks" class="a-button"> Задачи </a>
+		<li><a href="#notes" class="a-button"> Заметки </a>
 	</ul>
 	</nav>
 	</div>
 
-<!------------------------------------------------------------------------------>
+<!--  main  -------------------------------------------------------------------->
 <div class="main">
 
 <h3><a name="purpose"></a> Назначение </h3>
+
 <p>	На своём сайте я хочу сохранить информацию о всех сферах, которые мне интересны
 	или нужны. В первую очередь это будет справочник, который буду использовать 
 	для работы.
-<p> Здесь я храню заметки по созданию данного сайта.
+<p> Здесь я храню информацию по созданию данного сайта.
 
 <h3><a name="tasks"></a> Задачи </h3>
+
 <p class="date"> 2021.10.30
 <p>	Сделать шаблон стандартной страницы. Чтобы содержала всё необходимое, и 
 	было определено место для наполнения информацией.
 <p>	Посмотрев ролик, как играть в Warcraft 3, хочу сохранить рекомендации в одной
 	из страниц своего сайта.
 
+<p class=date> 2022.01.02
+<p> Ближайшая задача - создать страницу по сборным авиамоделям. 
+	Создать список необходимых материалов и инструментов.
+
 <h3><a name="notes"></a> Заметки </h3>
+
+<p class="date"> 2021.10
+<p> Я начинаю создавать свой новый сайт. Пробую новые возможности, стараюсь достичь 
+	желаемого вида сайта минимальными решениями. А именно, использую CSS grid, gradient, 
+	shadow. Информацию отделяю от оформления с помощью iframe.
+<p> Разместил сайт на GitHub, обновляю с помощью GitHub Desktop. Обновления появляются
+	не сразу, а примерно в течение 5 минут.
+
 <p class="date"> 2021.10.30
 <p>	Похоже, JavaScript работают на GitHub. Буду использовать по мере необходимости.
 	Это называется Bookmarklet, наверное.
 
+<p class="date"> 2021.10.30
+<p> Переработал оформление страниц. Убрал фреймы, буду делать обычные страницы.
+	Занял всю высоту экрана с помощью единиц vh. Но почему-то сумма единиц не равна 100%.
+	Наверное, из-за бордюров.
+<p>	Для основного окна задал полосу прорутки.
+
+<p class="date"> 2022.01.02
+<p> Определился с распределением кнопок в разделах. Переделал страницы.
+<p> Создал кнопку "Отладка" для быстрого переключения границ элементов html.
+
+<p> <a title="Должен быть установлен Viber для ПК" href="viber://chat?number=+375293397074">Написать в Viber</a>
+<p> <a class="a-button" href="mailto:vkoz@live.ru"> vkoz@live.ru </a>
+
 </div>
 
-<!------------------------------------------------------------------------------>
+<!--  aside  ------------------------------------------------------------------->
 	<div class="aside">
-	<h3> Ссылки </h3>
+	<h3><a name="links"></a> Ссылки </h3>
 	<ul class="none">
-		<li><a class="button" href="https://starkovden.github.io/Use-GitHub-Desktop.html"> 
-		Работа с GitHub Desktop </a>
+		<li><a class="a-button" href="https://starkovden.github.io/Use-GitHub-Desktop.html"> 
+			Работа с GitHub Desktop </a>
+		<li><a class="a-button" href="https://html-templates.info"> HTML Templates </a>
+		<li><a class="a-button" href="https://colormeup.co/#777777"> Color Me Up </a>
+		<li><a class="a-button" href="https://www.8host.com/blog/ispolzovanie-konsoli-razrabotchika-javascript">
+			Консоль разработчика </a>
 	</ul>
-	<h3> Указатель </h3>
+	<h3><a name="index"></a> Указатель </h3>
 	</div>
 
+<!------------------------------------------------------------------------------>
 	<div class="hline">  </div>
 
+
+<!--  nfoot  ------------------------------------------------------------------->
 	<div class="foot">
-		<a title="Должен быть установлен Viber для ПК" href="viber://chat?number=+375293397074">Написать в Viber</a>
+	<ul class=none>
+		<li> <a title="Вернуться назад" class="a-button" href="javascript:history.back()"> Назад </a>
+		<li> <a title="К содержанию сайта" class="a-button" href="../Index.html"> Содержание </a>
+	</ul>
+
 	</div>
 
+<!--  mfoot  ------------------------------------------------------------------->
 	<div class="foot">
 	<script type="text/javascript">
 	document.write(Date());
 	</script>
 	</div>
 
+<!--  sfoot  ------------------------------------------------------------------->
 	<div class="foot">
-	<a class="button" href="javascript:history.back()"> Вернуться назад </a>
+	<ul class="none">
+		<li><button class="btn-toggle"> Отладка </button>
+		<li>
+	</ul>
 	</div>
 
+<!------------------------------------------------------------------------------>
 </div>
+
+<!------------------------------------------------------------------------------>
+<script>
+// Выбираем кнопку
+const btn = document.querySelector('.btn-toggle');
+// Отслеживаем щелчок по кнопке
+btn.addEventListener('click', function() {
+  // Затем переключаем (добавляем/удаляем) класс .debug-theme для body
+  document.body.classList.toggle('debug-theme'); 
+})
+</script>
 
 </body>
 </html>

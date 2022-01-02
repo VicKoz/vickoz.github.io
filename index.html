@@ -4,71 +4,58 @@
 	<title> VicKoz Site </title>
 	<meta charset="utf-8">
 	<meta name="author" lang="ru" content="VicKoz">
+<!--
 	<style>
 		@import "Files/Styles.css";
 	</style>
+-->
+	<link href="Files/Styles.css" rel="stylesheet" id="theme-link">
 </head>
 
+<!------------------------------------------------------------------------------>
 <body>
 
-<!-- Комментарий -->
-
-
 <div class=container>
+
+<!--  title  ------------------------------------------------------------------->
 	<div class="title">
 	<h1> VicKoz </h1>
 	<h2 style="margin: -0.75em 0 0.25em 1em"> Archives </h2>
 	</div>
-	
+
+<!--  head  -------------------------------------------------------------------->
 	<div class="head">
 	<h2> Архив информации </h2>
 	</div>
-	
+
+<!--  help  -------------------------------------------------------------------->
 	<div class="help">
+	<ul class="none">
 <!--	<a href="/Pages/help.html" class="button"> Справка </a> -->
-	<a class="button" href="Index.html"> Справка </a>
+		<li><a class="a-button" href="Pages/About.html"> О проекте </a>
+		<li>
+	</ul>
 	</div>
 
-	<div class="hline">
-	</div>
+<!------------------------------------------------------------------------------>
+	<div class="hline">  </div>
 
+<!--  nav  --------------------------------------------------------------------->
 	<div class="nav">
 	<nav>
-	<h3> Содержание </h3>
+	<h3><a name="content"></a> Содержание </h3>
 	<ul class="none">
-		<li><a href="VkHardware.htm" class="button"> Компьютер </a>
-		<li><a href="VkSettings.htm" class="button"> Настройки </a>
-		<li><a href="VkSoftware.htm" class="button"> Программы </a>
-		<li><a href="ViKo_MultiMedia.htm" class="button"> Мультимедиа </a>
+		<li><a href="VkHardware.htm" class="a-button"> Компьютер </a>
+		<li><a href="VkSettings.htm" class="a-button"> Настройки </a>
+		<li><a href="VkSoftware.htm" class="a-button"> Программы </a>
+		<li><a href="ViKo_MultiMedia.htm" class="a-button"> Мультимедиа </a>
 	</ul>
 	</nav>
 	</div>
 
+<!--  main  -------------------------------------------------------------------->
 	<div class="main">
-	<h3> Новости </h3>
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
-		<p> &nbsp;
+	<h3><a name="news"></a> Новости </h3>
 		<p> &nbsp;
 		<p> &nbsp;
 		<p> &nbsp;
@@ -85,72 +72,62 @@
 		<p> &nbsp;
 		<p> &nbsp;
 
-<p class="date"> 2021.10.30
-<p> Переработал оформление страниц. Убрал фреймы, буду делать обычные страницы.
-	Занял всю высоту экрана с помощью единиц vh. Но почему-то сумма единиц не равна 100%.
-	Наверное, из-за бордюров.
-<p>	Для основного окна задал полосу прорутки.
+<p class="date"> 2022.01.02
+<p> Создал более-менее рабочую структуру страниц. Далее буду наполнять информацией.
 
 <p class="date"> 2021.10
-<p> Я начинаю создавать свой новый сайт. Пробую новые возможности, стараюсь достичь 
-	желаемого вида сайта минимальными решениями. А именно, использую CSS grid, gradient, 
-	shadow. Информацию отделяю от оформления с помощью iframe.
-<p> Разместил сайт на GitHub, обновляю с помощью GitHub Desktop. Обновления появляются
-	не сразу, а примерно в течение 5 минут.
+<p> Я начинаю создавать свой новый сайт.
+<p> Разместил сайт на GitHub.
 
 	</div>
 
+<!--  aside  ------------------------------------------------------------------->
 	<div class="aside">
-	<h3> Ссылки </h3>
+	<h3><a name="links"></a> Ссылки </h3>
 	<ul class="none">
-		<li><a class="button" href="https://starkovden.github.io/Use-GitHub-Desktop.html"> 
-		Работа с GitHub Desktop </a>
+		<li>
+		<li>
+
 	</ul>
-	<h3> Указатель </h3>
+	<h3><a name="index"></a> Указатель </h3>
 	</div>
 
+<!------------------------------------------------------------------------------>
 	<div class="hline">  </div>
 
-	<div class="foot">nfoot</div>
-	<div class="foot">mfoot</div>
-
+<!--  nfoot  ------------------------------------------------------------------->
 	<div class="foot">
-	<ul class="none">
-		<li><a class="button" href="Pages/About.html"> О проекте </a>
-		<li><a class="button" href="mailto:vkoz@live.ru"> vkoz@live.ru </a>
+	<ul class=none>
+		<li> <a title="Вернуться назад" class="a-button" href="javascript:history.back()"> Назад </a>
+		<li> <a title="К содержанию сайта" class="a-button" href="Index.html"> Содержание </a>
 	</ul>
 	</div>
 
+<!--  mfoot  ------------------------------------------------------------------->
+	<div class="foot"> &copy 2022 VicKoz </div>
+
+<!--  sfoot  ------------------------------------------------------------------->
+	<div class="foot">
+	<ul class="none">
+		<li><button class="btn-toggle"> Отладка </button>
+		<li>
+	</ul>
+	</div>
+
+<!------------------------------------------------------------------------------>
 </div>
 
-<!--
-<h2> Заголовок </h2>
-<figure>
-<img align=left src="Images/210825_VicKoz.jpg" width=50% alt="VicKoz 2021.08.25">
-<figcaption>
-	2021.08.25
-</figcaption>
-</figure>
+<!------------------------------------------------------------------------------>
+<script>
+// Выбираем кнопку
+const btn = document.querySelector('.btn-toggle');
+// Отслеживаем щелчок по кнопке
+btn.addEventListener('click', function() {
+  // Затем переключаем (добавляем/удаляем) класс .debug-theme для body
+  document.body.classList.toggle('debug-theme'); 
+})
+</script>
 
-<div class=grid>
-	<div class="1">1</div>
-	<div class="2">2</div>
-	<div class="3">3</div>
-	<div class="4">4</div>
-	<div class="5">5</div>
-	<div class="6">6</div>
-</div>
-
-<p> Текстовый абзац
-<time> 2021.09.04 </time>
-
-<p><input id = "email" type="email"> </input>
-
-<p><progress value="0.25"></progress> <meter value=0.50></meter>
-
-<p><progress>Task in progress...</progress>
--->
 
 </body>
 </html>
-

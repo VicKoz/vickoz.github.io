@@ -4,7 +4,7 @@
 <iframe src="Pages/Test.html" style="border: none" width="100%"></iframe>
 
 <!--
-<h2> ��������� </h2>
+<h2> Заголовок </h2>
 <figure>
 <img align=left src="Images/210825_VicKoz.jpg" width=50% alt="VicKoz 2021.08.25">
 <figcaption>
@@ -21,7 +21,7 @@
 	<div class="6">6</div>
 </div>
 
-<p> ��������� �����
+<p> Текстовый абзац
 <time> 2021.09.04 </time>
 
 <p><input id = "email" type="email"> </input>
@@ -33,7 +33,88 @@
 
 <h1><a href="../Index.html"> VicKoz </a></h1>
 
-<!--	<a class = button href = "/Pages/About.html"> � ������� </a> -->
+<!--	<a class = button href = "/Pages/About.html"> О проекте </a> -->
 
 		<a href="tel:+375293397074"> +375 29 339-70-74 </a>
 		
+
+<!--  Переключение стилей  -->
+<div al-app>
+<a href="#" class="btn btn-default" @click="t=!t">Switch</a>
+
+<link :disabled="!t" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link :disabled="t" rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.css">
+
+<hr/>
+<p class="bs-component">
+              <a href="#" class="btn btn-default">Default</a>
+              <a href="#" class="btn btn-primary">Primary</a>
+              <a href="#" class="btn btn-success">Success</a>
+              <a href="#" class="btn btn-info">Info</a>
+              <a href="#" class="btn btn-warning">Warning</a>
+              <a href="#" class="btn btn-danger">Danger</a>
+              <a href="#" class="btn btn-link">Link</a>
+            </p>
+
+</div>
+
+<!--  -->
+var btn = document.getElementById("theme-button");
+var link = document.getElementById("theme-link");
+
+btn.addEventListener("click", function () { ChangeTheme(); });
+
+function ChangeTheme()
+{
+    let lightTheme = "styles/light.css";
+    let darkTheme = "styles/dark.css";
+
+    var currTheme = link.getAttribute("href");
+    var theme = "";
+
+    if(currTheme == lightTheme)
+    {
+   	 currTheme = darkTheme;
+   	 theme = "dark";
+    }
+    else
+    {    
+   	 currTheme = lightTheme;
+   	 theme = "light";
+    }
+
+    link.setAttribute("href", currTheme);
+
+    Save(theme);
+}
+
+<!--  -->
+
+<script>
+let d = new Date();
+alert("Today's date is " + d);
+</script>
+
+<!------------------------------------------------------------------------------>
+<script>
+// Выбираем кнопку
+const btn = document.querySelector(".btn-toggle");
+// Выбираем таблицу стилей
+const theme = document.querySelector("#theme-link");
+// Отслеживаем щелчок по кнопке
+btn.addEventListener("click", function() {
+	// Если текущий адрес содержит "light-theme.css"
+	if (theme.getAttribute("href") == "Files/Styles.css") {
+	// …то переключаемся на "dark-theme.css"
+		theme.href = "Files/Debug.css";
+	// В противном случае… 
+	} else {
+	// …переключаемся на "light-theme.css"
+		theme.href = "Files/Styles.css";
+	}
+});
+</script>
+
+
+
+

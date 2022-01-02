@@ -10,10 +10,12 @@ body {
 	color: #003;
 	font-size: smaller;
 	font-family: verdana;
+	--anchor: #36F;
 	--ahover: #39F;
 	--avisit: #93F;
 	--gradstop: #DDD;
 	--gradmid: #EEE;
+	--header: #369;
 	/* margin: 1em 1.5em; */
 	padding: 0;
 	scrollbar-track-color: #eee;
@@ -27,21 +29,11 @@ body {
 }
 
 
-/*a:active {color: aqua}*/
-a:visited {
-	color: var(--avisit); /* #36c teal purple */
-}
-
-a:hover {
-	color: var(--ahover); font-style: regular; text-decoration: overline;
-	}
-a img {border: none}
-
-
 dl {margin: .5em 0}
 dt {color: #069; font-weight: normal; font-style: italic; margin-top: .5em}
 dd {margin-left: 1em; text-align: justify}
 
+h1, h2, h3, h4, h5, h6 { border: none }
 h1 {
 	color: #9CF; 
 	font-style: oblique; 
@@ -52,18 +44,18 @@ h1 {
 }
 /* h1 {color: #9cf; font-weight: lighter; margin: .5em 0; padding: 0 .5em; text-align: left} */
 h2 {
-	color: #f90; 
-	font-weight: normal; 
-	margin: 0 0; 
-	padding: 0 0.25em; 
-	text-align: left 
+	color: #f90;
+	font-weight: normal;
+	margin: 0 0;
+	padding: 0 0.25em;
+	text-align: left;
 }
 
 h3 {
 	color: #369; 
 	font-weight: lighter; 
-	margin: 0.5em 0; 
-	padding: 0 1em
+	margin: 1.0em 0.25em 0.25em; 
+	padding: 0 0;
 }
 h4 {color: #369; font-weight: bold; font-size: 100%; margin: .75em 0 .25em; padding: 0 1em}
 h5 {color: #369; font-family: verdana; font-weight: normal; font-size: 100%; margin: .75em 0 .25em; padding: 0}
@@ -75,10 +67,19 @@ hr {color: silver; height: 1px; margin: 2px;}
 p {
 	text-align: justify;
 	text-indent: 1em;
-	margin: 0 0.25em .25em 0.25em
+	margin: 0.25em 0.25em .25em 0.25em;
+	padding: 0 1em;
 }
+
 .att {font-weight: bold}
-.date {color: #069; font-style: italic; /* font-weight: bold */}
+
+.date {
+	color: #069;
+	font-style: italic;
+	margin: 1.00em 0.25em 0.25em 0.25em;
+	// font-weight: bold;
+}
+
 /*.date:before {content: "["}*/
 /*.date:after {content: "]"}*/
 .name {color: brown; font-weight: bold}
@@ -90,6 +91,7 @@ p {
 .warn {color: #c03}
 .cold {color: #30c}
 
+img {border: none}
 img {cursor: crosshair; margin: .5em}
 /*img {cursor: crosshair; margin: 10px}*/
 img.inline {margin: 0 .5em 0 0}
@@ -111,7 +113,7 @@ ul.none {
 	padding: 0 1em 0.25em;
 }
 ul.wide {list-stule: none; margin: 0; padding: 0}
-ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none} /* вложенные списки */
+ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none} /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
 
 table {background: #eee; border: 1px solid gray; show; /*font-size: 100%;*/ margin: .5em 0}
 caption {color: #369; font-weight: bold; font-size: smaller; text-align: left}
@@ -143,7 +145,7 @@ table.light td {border: 1px solid #ddd}
 	grid-template-columns: 1fr 4fr 1fr;
 	/* grid-template-rows: 60px 10px auto 10px 60px; */
 	/* grid-template-rows: 6% 1% 85% 1% 6%; */
-	grid-template-rows: 6vh 1vh 82.0vh 1vh 6vh;
+	grid-template-rows: 6vh 1vh 83.0vh 1vh 6vh;
 	grid-gap: 0 0.2em;
 	/* border-radius: 0.5em; */
 	/* --gradstop: #ececec; */
@@ -157,7 +159,6 @@ table.light td {border: 1px solid #ddd}
 .title, .head, .help {
 	background-image: linear-gradient(to bottom, white, var(--gradstop));
 	padding: 0.25em 0.5em;
-	
 }
 
 .title {
@@ -201,21 +202,37 @@ table.light td {border: 1px solid #ddd}
 	/* position: absolute; bottom: 0; */
 }
 
-.button {
-	margin: 0.4em;
+/*  Anchors styles  ____________________________________________________________*/
+
+a {
+	border: none;
+	color: var(--anchor);
+	margin: 0.25em;
 	padding: 0.20em;
+}
+
+/*a:active {color: aqua}*/
+
+a:visited {
+	color: var(--avisit); /* #36c teal purple */
+}
+
+a:hover {
+	color: var(--ahover); font-style: regular; text-decoration: overline;
+	}
+
+.a-button {
 	border-radius: 0.25em;
 	font-style: normal;
 }
 
-
-.button:hover {
+.a-button:hover {
 	/* background-image: linear-gradient(to bottom, white, var(--gradstop)); */
 	text-decoration: none;
 	box-shadow: 0 0 2px 1px var(--gradstop);
 }
 
-.button:active {
+.a-button:active {
 	/* background-image: linear-gradient(to bottom, var(--gradstop), white); */
 	box-shadow: 0 0 0.5px 0.5px var(--gradstop);
 	/* , inset 0 0.5px 0.5px 0.5px var(--gradstop); */
@@ -225,10 +242,38 @@ table.light td {border: 1px solid #ddd}
 
 /*  For debug (make visual borders) uncomment tags below  */
 
+/*
 div {border: 1px dotted aqua}
 h1, h2, h3, h4, h5, h6 {border: 1px dotted orange}
 p, dl, dt, dd, img, ol, ul, li, caption, th, td, 
 table.none td, table.none th, table.pad td, table.pad th {border: 1px dotted silver}
+  */
 
+body.debug-theme { color: #eee; background: #999; }
+body.debug-theme div { border: 0.5px dotted aqua; }
+body.debug-theme h1 { border: 1px dotted #69C; }
+body.debug-theme h2 { border: 1px dotted #69C; }
+body.debug-theme h3 { border: 1px dotted #69C; }
+body.debug-theme h4 { border: 1px dotted #69C; }
+body.debug-theme h5 { border: 1px dotted #69C; }
+body.debug-theme h6 { border: 1px dotted #69C; }
+body.debug-theme p  { 
+	border: 0.5px dotted silver;
+	margin: 0.25em 0.25em .25em 0.25em;
+	}
+body.debug-theme dl { border: 1px dotted silver; }
+body.debug-theme dt { border: 1px dotted silver; }
+body.debug-theme dd { border: 1px dotted silver; }
+body.debug-theme img { border: 1px dotted silver; }
+body.debug-theme ol  { border: 1px dotted silver; }
+body.debug-theme ul  { border: 1px dotted silver; }
+body.debug-theme li  { border: 1px dotted silver; }
+body.debug-theme caption  { border: 1px dotted silver; }
+body.debug-theme th  { border: 1px dotted silver; }
+body.debug-theme td  { border: 1px dotted silver; }
+body.debug-theme table.none td  { border: 1px dotted silver; }
+body.debug-theme table.none th  { border: 1px dotted silver; }
+body.debug-theme table.pad td   { border: 1px dotted silver; }
+body.debug-theme table.pad th   { border: 1px dotted silver; }
 
 
