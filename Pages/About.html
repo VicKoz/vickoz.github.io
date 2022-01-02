@@ -125,7 +125,7 @@
 <!--  mfoot  ------------------------------------------------------------------->
 	<div class="foot">
 	<script type="text/javascript">
-	document.write(Date());
+		document.write(Date());
 	</script>
 	</div>
 
@@ -142,13 +142,10 @@
 
 <!------------------------------------------------------------------------------>
 <script>
-// Выбираем кнопку
-const btn = document.querySelector('.btn-toggle');
-// Отслеживаем щелчок по кнопке
-btn.addEventListener('click', function() {
-  // Затем переключаем (добавляем/удаляем) класс .debug-theme для body
-  document.body.classList.toggle('debug-theme'); 
-})
+	const btn = document.querySelector('.btn-toggle');
+	btn.addEventListener('click', function() {
+		document.body.classList.toggle('debug-theme'); 
+	})
 </script>
 
 </body>
