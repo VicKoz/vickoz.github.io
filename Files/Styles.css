@@ -6,6 +6,7 @@
   @note
   */
 
+
 body {
 	color: #003;
 	font-size: smaller;
@@ -16,15 +17,15 @@ body {
 	--gradstop: #DDD;
 	--gradmid: #EEE;
 	--header: #369;
-	/* margin: 1em 1.5em; */
 	padding: 0;
-	scrollbar-track-color: #eee;
-	scrollbar-3Dlight-color: #fff;
+/*	scrollbar-track-color: #EEE;
+	scrollbar-thumb: #00F;
+	scrollbar-3Dlight-color: #FFF;
 	scrollbar-highlight-color: #ddd;
 	scrollbar-face-color: #ddd;
 	scrollbar-arrow-color: #369;
 	scrollbar-shadow-color: #ddd;
-	scrollbar-darkshadow-color: #ccc;
+	scrollbar-darkshadow-color: #ccc; */
 	/*scrollbar-base-color: #eee*/
 }
 
@@ -182,23 +183,25 @@ table.light td {border: 1px solid #ddd}
 		linear-gradient(to bottom, var(--gradstop), var(--gradline), var(--gradstop));
 }
 
+/*
 .navhead, .mainhead, .asidehead {
 	background-image: 
 	linear-gradient(to bottom, var(--gradstop), white);
 	padding: 0 0.5em;
 }
+*/
 
 .nav, .main, .aside {
-	background-color: white;
+	/* background-color: white; */
 	background-image:
-	linear-gradient(to bottom, var(--gradstop) 0%, white 8%, white 92%, var(--gradstop) 100%); */
-	margin: 0.25em 0.5em;
+		linear-gradient(to bottom, var(--gradstop) 0%, white 8%, white 92%, var(--gradstop) 100%);
+	margin: 0em 0em;
 	overflow-y: auto;
 }
 
 .foot {
 	background-image: linear-gradient(to bottom, var(--gradstop), white);
-	padding: 0 0.5em;
+	/* padding: 0 0.5em; */
 	/* position: absolute; bottom: 0; */
 }
 
@@ -238,36 +241,29 @@ a:hover {
 	/* , inset 0 0.5px 0.5px 0.5px var(--gradstop); */
 }
 
+
 /*  Debug  ____________________________________________________________________*/
-
-/*  For debug (make visual borders) uncomment tags below  */
-
-/*
-div {border: 1px dotted aqua}
-h1, h2, h3, h4, h5, h6 {border: 1px dotted orange}
-p, dl, dt, dd, img, ol, ul, li, caption, th, td, 
-table.none td, table.none th, table.pad td, table.pad th {border: 1px dotted silver}
-  */
 
 body.debug-theme { color: #eee; background: #999; }
 body.debug-theme div { border: 0.5px dotted aqua; }
-body.debug-theme h1 { border: 1px dotted #69C; }
-body.debug-theme h2 { border: 1px dotted #69C; }
-body.debug-theme h3 { border: 1px dotted #69C; }
-body.debug-theme h4 { border: 1px dotted #69C; }
-body.debug-theme h5 { border: 1px dotted #69C; }
-body.debug-theme h6 { border: 1px dotted #69C; }
+body.debug-theme h1 { border: 1px dotted orange; }
+body.debug-theme h2 { border: 1px dotted orange; }
+body.debug-theme h3 { border: 1px dotted orange; }
+body.debug-theme h4 { border: 1px dotted orange; }
+body.debug-theme h5 { border: 1px dotted orange; }
+body.debug-theme h6 { border: 1px dotted orange; }
 body.debug-theme p  { 
 	border: 0.5px dotted silver;
 	margin: 0.25em 0.25em .25em 0.25em;
 	}
+body.debug-theme a { border: 1px dotted red; }
 body.debug-theme dl { border: 1px dotted silver; }
 body.debug-theme dt { border: 1px dotted silver; }
 body.debug-theme dd { border: 1px dotted silver; }
 body.debug-theme img { border: 1px dotted silver; }
 body.debug-theme ol  { border: 1px dotted silver; }
-body.debug-theme ul  { border: 1px dotted silver; }
-body.debug-theme li  { border: 1px dotted silver; }
+body.debug-theme ul  { border: 1px dotted blue; }
+body.debug-theme li  { border: 1px dotted lime; }
 body.debug-theme caption  { border: 1px dotted silver; }
 body.debug-theme th  { border: 1px dotted silver; }
 body.debug-theme td  { border: 1px dotted silver; }
