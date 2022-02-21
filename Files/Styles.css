@@ -117,10 +117,10 @@ ul.wide {list-stule: none; margin: 0; padding: 0}
 ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none} /* ��������� ������ */
 
 table {background: #eee; border: 1px solid gray; show; /*font-size: 100%;*/ margin: .5em 0}
-caption {color: #369; font-weight: bold; font-size: smaller; text-align: left}
-thead td {color: #369; font-size: smaller}
-th {border: 1px solid gray; color: #369; font-style: normal; font-weight: normal; font-size: smaller; padding: 0 .5em; text-align: left; vertical-align: top}
-td {border: 1px solid silver; font-size: smaller; padding: 0 .5em; vertical-align: top}
+caption {color: #369; font-weight: bold; font-size: normal; text-align: left}
+thead td { color: #369; font-size: normal }
+th {border: 1px solid gray; color: #369; font-style: normal; font-weight: normal; font-size: normal; padding: 0 .5em; text-align: left; vertical-align: top}
+td {border: 1px solid silver; font-size: normal; padding: 0 .5em; vertical-align: top}
 table.pad {background-color: #eee; border: none; padding: .5em}
 table.pad td {border: none}
 table.pad th {border: none}
@@ -241,6 +241,13 @@ a:hover {
 	/* , inset 0 0.5px 0.5px 0.5px var(--gradstop); */
 }
 
+hr {
+	margin: 2em 1em 0;
+	border:none;
+	/* background-color: lightgrey; */
+	background-color: silver;
+	height: 0.5px;
+}
 
 /*  Debug  ____________________________________________________________________*/
 
