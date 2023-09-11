@@ -106,7 +106,7 @@ p {
 /*.pad {background: #eee; border: 1px solid gray; margin: .5em 0; padding: .5em}*/
 .pad {background: #eee; border: none; margin: .5em 0; padding: .5em}
 .right {text-align: right}
-.strik {text-decoration: line-through}
+.strike {text-decoration: line-through}
 .warn {color: #c03}
 .cold {color: #30c}
 
@@ -156,6 +156,8 @@ th.bold {
 }
 
 td {border: 1px solid silver; font-size: normal; padding: 0 .5em; vertical-align: top}
+
+
 table.pad {background-color: #eee; border: none; padding: .5em}
 table.pad td {border: none}
 table.pad th {border: none}
