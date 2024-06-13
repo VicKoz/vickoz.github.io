@@ -166,12 +166,10 @@ th.subhead {
 
 td {border: 1px solid silver; font-size: normal; padding: 0 .5em; vertical-align: top}
 
-<<<<<<< HEAD
 td.right {
 	text-align: right;
 }
-=======
->>>>>>> origin/main
+
 
 table.pad {background-color: #eee; border: none; padding: .5em}
 table.pad td {border: none}

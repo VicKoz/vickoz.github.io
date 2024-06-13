@@ -49,56 +49,130 @@
 
 <h3><a name="settings"></a> Настройки </h3>
 
-<p>Tools / Preferences
+<p>Tools &rarr; Preferences
 
 <table class=none>
 
-<!------------------------------------------------------------------------------>
-<tr><th colspan="4"> <hr>
-<tr><th colspan="4"> System &ndash; General
+<!--  System - General  -------------------------------------------------------->
+<tr><th colspan=3>	<hr>
+<tr><th colspan=2> System &ndash; General
 
-<tr><th class=subhead colspan="4"> Startup
-<tr><td> &#10004; <td colspan="2"> Reopen Last Project Group
-<tr><td> &#10004; <td colspan="2"> Open Home page on start
-<tr><td> &#10004; <td colspan="2"> Show startup screen <td><td> Можно смотреть процесс загрузки
+<tr><th class=subhead colspan=2> Startup
+<tr><td> &check;	<td> Reopen Last Project Group
+<tr><td> &check;	<td> Open Home page on start
+<tr><td> &check;	<td> Show startup screen <td width=50%> Можно смотреть процесс загрузки
 
-<tr><th class=subhead colspan="4"> General
-<tr><td> &#10004; <td colspan="2"> Monitor clipboard content within this application only
-<tr><td> &#10004; <td colspan="2"> Use Left/Right selection
+<tr><th class=subhead colspan=2> General
+<tr><td> &check;	<td> Monitor clipboard content within this application only
+<tr><td> &check;	<td> Use Left/Right selection
 
-<tr><th class=subhead colspan="4"> Reload Documents Modified outside of Altium Designer
-<tr><td> &bull; <td colspan="2"> Ask User
-<tr><td class=right> &#10004; <td colspan="2"> Only if Document is modified
+<tr><th class=subhead colspan=2> Reload Documents Modified outside of Altium Designer
+<tr><td> &bull;		<td> Ask User
+<tr><td class=right> &check;	<td> Only if Document is modified
 
-<tr><th class=subhead colspan="4"> Localization
-<tr><td> &ndash; <td colspan="2"> Use localized resources
+<tr><th class=subhead colspan=2> Localization
+<tr><td> &ndash;	<td> Use localized resources
 
-<tr><th class=subhead colspan="4"> Advanced <td> Кнопка справа внизу
-	<br> Можно смотреть категории All, Modified, Open Beta
-<tr><td> &#10004; <td colspan="2"> Legacy.MainWindowCaption <td><td> Показывать полный путь в заголовке
-<tr><td> &#10004; <td colspan="2"> LibraryHealth <td>
-<tr><td> &ndash; <td colspan="2"> PCB.OpenCascadeLatestVersion <td><td> Чтобы не выводил прозрачные платы в 3D 
-<tr><td> &#10004; <td colspan="2"> PCB.FootprintParameters <td><td> Использовать параметры в футпринтах
-<tr><td> &#10004; <td colspan="2"> PCB.LayerDrawingOrder.ProperMultilayer <td><td> Раскрашивает ПО в цвет цепи?
-<tr><td> &ndash; <td colspan="2"> PCB.PasteMask.Percentage <td><td> Разрешить установку размера маски пасты в % от площади площадки
-						<br>(установка в мм тоже работает)
-<tr><td> &ndash; <td colspan="2"> Schematic.UI.ShowMoreOrLessParameters <td><td> Не показывать больше или меньше параметров
-<tr><td> &#10004; <td colspan="2"> System.UI.IPP.ShowUniqueID
-<tr><td> ? 		<td colspan="2"> UI.DisableFractalMode <td><td> Боковые панели не группируются
-<tr><td> &ndash; <td colspan="2"> UI.UseActiveBar <td><td> Отключить ActiveBar в рабочей области
+<tr><th class=subhead colspan=2> Advanced 		<td> Кнопка справа внизу
+												<br> Можно смотреть категории All, Modified, Open Beta
+<tr><td> &check;	<td> Legacy.MainWindowCaption	<td> Показывать полный путь в заголовке
+<tr><td> &check;	<td> LibraryHealth
+<tr><td> &ndash;	<td> PCB.OpenCascadeLatestVersion	<td> Чтобы не выводил прозрачные платы в 3D 
+<tr><td> &check;	<td> PCB.FootprintParameters		<td> Использовать параметры в футпринтах
+<tr><td> &check;	<td> PCB.LayerDrawingOrder.ProperMultilayer	<td> Раскрашивает ПО в цвет цепи?
+<tr><td> &ndash;	<td> PCB.PasteMask.Percentage	<td> Разрешить установку размера маски пасты в % от площади площадки
+													<br>(установка в мм тоже работает)
+<tr><td> &ndash;	<td> Schematic.UI.ShowMoreOrLessParameters	<td> Не показывать больше или меньше параметров
+<tr><td> &check;	<td> System.UI.IPP.ShowUniqueID
+<tr><td> ? 			<td> UI.DisableFractalMode		<td> Боковые панели не группируются
+<tr><td> &ndash;	<td> UI.UseActiveBar			<td> Отключить ActiveBar в рабочей области
 
-<!------------------------------------------------------------------------------>
-<tr><th colspan="4"> <hr>
-<tr><th colspan="4"> System &ndash; View
+<!--  System - View  ----------------------------------------------------------->
+<tr><th colspan=3> <hr>
+<tr><th colspan=2> System &ndash; View
 
-<tr><th class=subhead colspan="4"> Desktop
-<tr><th class=subhead colspan="4"> Popup Panels
-<tr><td><td> Popup delay <td> 0 
-<tr><th class=subhead colspan="4"> UI Theme
+<tr><th class=subhead colspan=2> Desktop
 
-<tr>
+<tr><th class=subhead colspan=2> Popup Panels
+<tr><td><td> Popup delay: &nbsp;&nbsp; 0
+<tr><td><td> Hide delay: &nbsp;&nbsp; 25%
+<tr><td> &ndash;	<td> Use animation
+<tr><td> &ndash;	<td> Group documents if need
+<tr><td> &check;	<td> Multiple documents bar 	<td> Можно видеть заголовки всех открытыех файлов
 
+<tr><th class=subhead colspan=2> General
+ 
+<tr><th class=subhead colspan=2> Documents Bar
+ 
+<tr><th class=subhead colspan=2> UI Theme
+<tr><td><td> Current: &nbsp;&nbsp; Altium Light Gray	<td> Светлая тема
 
+<!--  System - Account Management  --------------------------------------------->
+<tr><th colspan=3> <hr>
+<tr><th colspan=2> System &ndash; Account Management
+
+<tr><th class=subhead colspan=2> Altium Connection
+<tr><td><td> Would you like to connect with Altium?
+<tr><td> &bull;	<td> No, I wish to remain disconnected from Altium 
+
+<tr><th class=subhead colspan=2> Account Sign in
+
+<tr><th class=subhead colspan=2> Altium Account Management Servers
+
+<!--  System - Transparency  --------------------------------------------------->
+<tr><th colspan=3> <hr>
+<tr><th colspan=2> System &ndash; Transparency
+
+<tr><th class=subhead colspan=2> Transparency
+
+<!--  System - Navigation  ----------------------------------------------------->
+<tr><th colspan=3> <hr>
+<tr><th colspan=2> System &ndash; Navigation
+
+<tr><th class=subhead colspan=2> Highlight Methods <td> Подсветка объектов при навигации и перекрёстном выделении 
+
+<tr><td> &check;	<td> Selecting
+<tr><td> &#10003;	<td> Zooming &nbsp;&nbsp; 75%
+<tr><td> &ndash;	<td> Connective Graph
+<tr><td> &check;	<td> Dimming &nbsp;&nbsp; 50%
+
+<tr><th class=subhead colspan=2> Objects To Display
+
+<tr><th class=subhead colspan=2> Cross Select Mode <td> Режим перекрёстного выделения между схемой и платой 
+<tr><td> &check;	<td> Cross Selection
+<tr><td> &ndash;	<td> Dimming
+<tr><td> &ndash;	<td> Zooming
+<tr><td> &ndash;	<td> Reposition selected component in PCB	<td> Выхватывает со смещением выбранный компонент
+<tr><td> &ndash;	<td> Focus document containing selection if visible
+<tr><td>	<td> Objects for cross selection
+<tr><td> &check;	<td> Components
+<tr><td> &check;	<td> Nets
+<tr><td> &check;	<td> Pins
+
+<!--  System - Design Insight  ------------------------------------------------->
+<tr><th colspan=3> <hr>
+<tr><th colspan=2> System &ndash; Design Insight
+
+<tr><td> &ndash;	<td> Enable Document Insight
+<tr><td> &ndash;	<td> Enable Project Insight
+<tr><td> &check;	<td> Enable Connectivity Insight
+<tr><td> &check;	<td> Enable Hyperlink Insight
+<tr><td><td> Mouse Hover Delay: &nbsp;&nbsp; 1s
+
+<!--  System - Project Panel  -------------------------------------------------->
+<tr><th colspan=3> <hr>
+<tr><th colspan=2> System &ndash; Project Panel	<td> Нужна перезагрузка для некоторых изменений
+
+<tr><th class=subhead colspan=2> General
+<tr><td> &ndash;	<td> Show VCS status
+<tr><td> &ndash;	<td> Show document position in project	<td> Показывает файлы в виде Schematic.SchDoc(1)
+<tr><td> &check;	<td> Show full patch information in hint
+<tr><td> &ndash;	<td> Show Automatic Sheet Numbering		<td> Показывает файлы в виде [1]Schematic.SchDoc 
+<tr><td> &check;	<td> Show Components and Nets folders
+
+<tr><th class=subhead colspan=2> File View
+<tr><td> &ndash;	<td> Show Project Structure		<td>
+<tr><td> &ndash;	<td> Show Document Structure	<td> Меняет имя папок в панели Projects на Source Document
 
 </table>
 
