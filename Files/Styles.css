@@ -1,14 +1,14 @@
 /*!*****************************************************************************
   @file			Styles.css
-  @author		VicKoz
+  @author		ViKo
   @brief		styles for my site
-  @date			2021
+  @date			2021, 2024
   @note
   */
 
 body {
 	color: #003;
-	font-size: smaller;
+	/* font-size: smaller; */
 	font-family: verdana;
 	--anchor: #36F;
 	--ahover: #39F;
@@ -88,6 +88,7 @@ p {
 }
 
 .att {
+	background-color: #eee; 
 	font-size: 90%;
 	font-weight: bold;
 }
@@ -155,7 +156,20 @@ th.bold {
 	font-style: bold;
 }
 
+th.subhead {
+	background-color: #eee;
+	font-weight: bold;
+	padding-left: 2em;
+	text-style: bold;
+}
+
+
 td {border: 1px solid silver; font-size: normal; padding: 0 .5em; vertical-align: top}
+
+td.right {
+	text-align: right;
+}
+
 table.pad {background-color: #eee; border: none; padding: .5em}
 table.pad td {border: none}
 table.pad th {border: none}
@@ -277,8 +291,8 @@ a:hover {
 }
 
 hr {
-	margin: 2em 1em 0;
-	border:none;
+	margin: 1em 1em 0;
+	border: none;
 	/* background-color: lightgrey; */
 	background-color: silver;
 	height: 0.5px;
