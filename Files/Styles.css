@@ -80,6 +80,16 @@ h5 {
 hr {color: silver; height: 1px; margin: 2px;}
 /* hr {color: black; height: 2px} */
 
+hr {
+	/* background-color: lightgrey; */
+	background-color: silver;
+	border: none;
+	/* height: 0.5px; */
+	height: 1px;
+	margin: 1em 1em 0;
+}
+
+
 p {
 	text-align: justify;
 	text-indent: 1em;
@@ -196,7 +206,7 @@ table.light td {border: 1px solid #ddd}
 	grid-template-columns: 1fr 4fr 1fr;
 	/* grid-template-rows: 60px 10px auto 10px 60px; */
 	/* grid-template-rows: 6% 1% 85% 1% 6%; */
-	grid-template-rows: 6vh 1vh 83.5vh 1vh 6vh;
+	grid-template-rows: 6vh 1vh 84vh 1vh 6vh;
 	grid-gap: 0 0.2em;
 	/* border-radius: 0.5em; */
 	/* --gradstop: #ececec; */
@@ -255,6 +265,29 @@ table.light td {border: 1px solid #ddd}
 	/* position: absolute; bottom: 0; */
 }
 
+
+.main {
+	display: grid;
+	grid-template-rows: repeat(8, 1vh auto-fit);
+	grid-gap: 0 0.2em;
+	/* border-radius: 0.5em; */
+	/* --gradstop: #ececec; */
+	--gradstop: #ddd;
+	--gradline: #aaa;
+	color: black;
+	padding: 0.2em;
+	/* margin: 0.2em 0; */
+}
+
+.m-hr {
+	background-image: 
+		linear-gradient(to bottom, var(--gradstop), var(--gradline), var(--gradstop));	
+}
+
+.m-text {
+	
+}
+
 /*  Anchors styles  ____________________________________________________________*/
 
 a {
@@ -291,13 +324,7 @@ a:hover {
 	/* , inset 0 0.5px 0.5px 0.5px var(--gradstop); */
 }
 
-hr {
-	margin: 1em 1em 0;
-	border: none;
-	/* background-color: lightgrey; */
-	background-color: silver;
-	height: 0.5px;
-}
+
 
 /*  Debug  ____________________________________________________________________*/
 
@@ -321,6 +348,7 @@ body.debug-theme a { border: 1px dotted red; }
 body.debug-theme dl { border: 1px dotted silver; }
 body.debug-theme dt { border: 1px dotted silver; }
 body.debug-theme dd { border: 1px dotted silver; }
+body.debug-theme hr { border: 1px dashed black; }
 body.debug-theme img { border: 1px dotted silver; }
 body.debug-theme ol  { border: 1px dotted silver; }
 body.debug-theme ul  { border: 1px dotted blue; }
