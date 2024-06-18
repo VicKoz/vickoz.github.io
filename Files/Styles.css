@@ -107,7 +107,7 @@ p {
 	color: #069;
 	font-style: italic;
 	margin: 1.00em 0.25em 0.25em 0.25em;
-	// font-weight: bold;
+	/* font-weight: bold; */
 }
 
 /*.date:before {content: "["}*/
@@ -143,19 +143,23 @@ ul.none {
 	margin: 0;
 	padding: 0 1em 0.25em;
 }
-ul.wide {list-stule: none; margin: 0; padding: 0}
-ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none} /* ��������� ������ */
+ul.wide {list-style: none; margin: 0; padding: 0}
+ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none}
 
-table {background: #eee; border: 1px solid gray; show; /*font-size: 100%;*/ margin: .5em 0}
-caption {color: #369; font-weight: bold; font-size: normal; text-align: left}
-thead td { color: #369; font-size: normal }
+table {
+	background: #eee; 
+	border: 1px solid gray; 
+	/* font-size: 100%; */
+	margin: .5em 0}
+caption {color: #369; font-weight: bold; font-size: 100%; text-align: left}
+thead td { color: #369; font-size: 100% }
 
 th {
 	border: 1px solid gray;
 	color: #369;
 	font-style: normal;
 	font-weight: normal;
-	font-size: normal;
+	font-size: 100%;
 	/* margin: 0.5em 0; */
 	padding: 0.2em 0.5em;
 	text-align: left;
@@ -163,18 +167,23 @@ th {
 }
 
 th.bold {
-	font-style: bold;
+	font-weight: bold;
 }
 
 th.subhead {
 	background-color: #eee;
 	font-weight: bold;
 	padding-left: 2em;
-	text-style: bold;
+	font-weight: bold;
 }
 
 
-td {border: 1px solid silver; font-size: normal; padding: 0 .5em; vertical-align: top}
+td {
+	border: 1px solid silver;
+	font-size: 100%;
+	padding: 0 .5em;
+	vertical-align: top
+}
 
 td.right {
 	text-align: right;
@@ -191,6 +200,12 @@ table.light {background-color: #eee; border: none}
 table.light th {border: 1px solid #ddd}
 table.light td {border: 1px solid #ddd}
 
+table.preferences {
+	background-color: transparent;
+	border: none;
+	border-collapse: collapse;
+	padding: 0.5em;
+}
 
 /*  Divisions  ________________________________________________________________*/
 
@@ -268,7 +283,17 @@ table.light td {border: 1px solid #ddd}
 
 .main {
 	display: grid;
-	grid-template-rows: repeat(8, 1vh auto-fit);
+	/* grid-template-rows: repeat(8, 1vh auto-fit); */
+/*	grid-template-rows:
+		"main-text main-hline main-text main-hline main-text main-hline main-text main-hline";
+*/
+	/* grid-template-rows: grid; */
+	grid-template-areas:
+		"main-text"
+		"main-hline"
+		"main-text"
+		"main-hline";
+	grid-template-rows:	repeat (4, auto auto); 
 	grid-gap: 0 0.2em;
 	/* border-radius: 0.5em; */
 	/* --gradstop: #ececec; */
@@ -279,12 +304,17 @@ table.light td {border: 1px solid #ddd}
 	/* margin: 0.2em 0; */
 }
 
-.m-hr {
+.main-hline {
 	background-image: 
-		linear-gradient(to bottom, var(--gradstop), var(--gradline), var(--gradstop));	
+		linear-gradient(to bottom, var(--gradstop), var(--gradline), var(--gradstop));
+	grid-row: span 1;
+	margin: 0;
+	padding: 0;
 }
 
-.m-text {
+.main-text {
+/*	background-image:
+		linear-gradient(to bottom, var(--gradstop) 0%, white 6vh, white 98%, var(--gradstop) 100%); */
 	
 }
 
@@ -304,8 +334,10 @@ a:visited {
 }
 
 a:hover {
-	color: var(--ahover); font-style: regular; text-decoration: overline;
-	}
+	color: var(--ahover);
+	font-style: normal;
+	text-decoration: overline;
+}
 
 .a-button {
 	border-radius: 0.25em;
@@ -329,7 +361,7 @@ a:hover {
 /*  Debug  ____________________________________________________________________*/
 
 body.debug-theme { color: #eee; background: #999; }
-body.debug-theme div { border: 0.5px dotted aqua; }
+body.debug-theme div { border: 0.5px dotted blue; }
 body.debug-theme h1 { border: 1px dotted orange; }
 body.debug-theme h2 { border: 1px dotted orange; }
 body.debug-theme h3 { border: 1px dotted orange; }
@@ -348,10 +380,10 @@ body.debug-theme a { border: 1px dotted red; }
 body.debug-theme dl { border: 1px dotted silver; }
 body.debug-theme dt { border: 1px dotted silver; }
 body.debug-theme dd { border: 1px dotted silver; }
-body.debug-theme hr { border: 1px dashed black; }
+body.debug-theme hr { border: 1px dashed silver; }
 body.debug-theme img { border: 1px dotted silver; }
 body.debug-theme ol  { border: 1px dotted silver; }
-body.debug-theme ul  { border: 1px dotted blue; }
+body.debug-theme ul  { border: 1px dotted aqua; }
 body.debug-theme li  { border: 1px dotted lime; }
 body.debug-theme caption  { border: 1px dotted silver; }
 body.debug-theme th  { border: 1px dotted silver; }
