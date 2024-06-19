@@ -288,12 +288,12 @@ table.preferences {
 		"main-text main-hline main-text main-hline main-text main-hline main-text main-hline";
 */
 	/* grid-template-rows: grid; */
-	grid-template-areas:
+/*	grid-template-areas:
 		"main-text"
 		"main-hline"
 		"main-text"
-		"main-hline";
-	grid-template-rows:	repeat (4, auto auto); 
+		"main-hline";	*/
+/*	grid-template-rows:	repeat (auto-fill, minmax(120px, 1fr));	 */
 	grid-gap: 0 0.2em;
 	/* border-radius: 0.5em; */
 	/* --gradstop: #ececec; */
@@ -306,16 +306,18 @@ table.preferences {
 
 .main-hline {
 	background-image: 
-		linear-gradient(to bottom, var(--gradstop), var(--gradline), var(--gradstop));
+		linear-gradient(to bottom, white, var(--gradstop), var(--gradline), var(--gradstop), white);
+	height: 10px;
 	grid-row: span 1;
 	margin: 0;
 	padding: 0;
 }
 
 .main-text {
-/*	background-image:
-		linear-gradient(to bottom, var(--gradstop) 0%, white 6vh, white 98%, var(--gradstop) 100%); */
-	
+/*	
+	background-image:
+		linear-gradient(to bottom, var(--gradstop) 0%, white 6vh, white 98%, var(--gradstop) 100%);	
+	*/
 }
 
 /*  Anchors styles  ____________________________________________________________*/
