@@ -151,7 +151,7 @@ table {
 	border: 1px solid gray; 
 	/* font-size: 100%; */
 	margin: .5em 0}
-caption {color: #369; font-weight: bold; font-size: 100%; text-align: left}
+caption {color: #369; font-weight: normal; font-size: 100%; margin: .5em; text-align: left}
 thead td { color: #369; font-size: 100% }
 
 th {
