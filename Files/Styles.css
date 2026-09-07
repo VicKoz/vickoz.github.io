@@ -29,6 +29,10 @@ body {
 	/*scrollbar-base-color: #eee*/
 }
 
+code, td.mono {
+    /* Браузер по очереди проверит наличие этих шрифтов в системе */
+    font-family: "JetBrains Mono", "Cascadia Mono", "Fira Code", Consolas, monospace;
+}
 
 dl {margin: .5em 0}
 dt {color: #069; font-weight: normal; font-style: italic; margin-top: .5em}

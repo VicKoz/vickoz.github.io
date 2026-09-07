@@ -112,10 +112,10 @@ shadow. Информацию отделяю от оформления с пом�
 <p> <a class="a-button" href="mailto:vkoz@live.ru"> vkoz@live.ru </a>
 
 <p class="date"> 2022.01.22
-<p> Сайт на github использует путь к заглавной странице не такой, как на моём
+<p> Сайт на GitHub использует путь к заглавной странице не такой, как на моём
 компьютере. Пришлось убрать кнопку "Содержание" слева внизу, для перехода в начало
-сайта. Хотя можно задать адрес, как на github. Вот ссылки, которые работают в 
-локальном сайте и в github, соответственно:
+сайта. Хотя можно задать адрес, как на GitHub. Вот ссылки, которые работают в 
+локальном сайте и в GitHub, соответственно:
 <ul class=none>
 	<li> <a title="К содержанию сайта" class="a-button" href="../Index.html"> Содержание </a>
 	<li> <a title="К содержанию сайта" class="a-button" href="https://vickoz.github.io/"> Содержание </a>
@@ -130,6 +130,7 @@ shadow. Информацию отделяю от оформления с пом�
 <p class="date"> 2022.02.21
 <p> Страница с именем "Multimedia.html" по ссылке "MultiMedia.html" не открывалась с
 github. А в домашнем компьютере страница открывалась. Изменил ссылку, страница открывается.
+Это связано с Linux, на нём работает GitHub. 
 
 <p class="date"> 2022.03.08
 <p> Чтобы GitHub репозитории можно было извлекать и отправлять через SourceTree,
@@ -145,8 +146,14 @@ manager-core. Можно отметить Always use this select.
 <p> Изучаю возможность встроить в ячейку grid свою grid. 
 	Но для размещения информации по настройке Altium Designer оставляю таблицу.
 
+<p class="date"> 2026.09
+<p> Символы - чекбоксы можно вставить в html-код просто в виде utf-8 символов: ☐☑ 
+вместо  &amp;#9744;, &amp;#9745;. 
+Так же можно задать символы стрелки: →← вместо &amp;rarr; &amp;larr; и другие unicode символы.   
+<p> Сохраняю коды или имена символов, которые использовал до этого. Отсюда можно просто копировать сами символы и вставлять в редакторе.
+<p> &bull; &rarr; &larr; &#9744; &#9745; - &ndash; &mdash;  
 
-
+<p> Научился перематывать данный блок класса .main в конец, на последнюю заметку. 
 </div>
 
 <!--  aside  ------------------------------------------------------------------->
@@ -208,6 +215,23 @@ manager-core. Можно отметить Always use this select.
 	btn.addEventListener('click', function() {
 		document.body.classList.toggle('debug-theme'); 
 	})
+</script>
+
+<!--
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Находим блок по классу .main
+    const mainDiv = document.querySelector('.main');
+    if (mainDiv) {
+      // Сдвигаем ползунок прокрутки в самый конец
+      mainDiv.scrollTop = mainDiv.scrollHeight;
+    }
+  });
+</script>
+-->
+
+<script>
+	document.querySelector('.main').scrollTop = document.querySelector('.main').scrollHeight;
 </script>
 
 </body>

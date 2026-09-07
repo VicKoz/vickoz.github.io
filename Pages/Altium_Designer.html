@@ -50,43 +50,52 @@
 
 <h3><a id="settings"></a> Настройки </h3>
 
-<p> Tools &rarr; Preferences
+<p> Tools → Preferences
 
 <table class=none>
 
 <!--  System - General  ——————————————————————————————————————————————————————-->
 <tr><th colspan=3>	<hr>
-<tr><th colspan=2> System &ndash; General
+<tr><th colspan=2> System – General
 
 <tr><th class=subhead colspan=2> Startup
-<tr><td> &#9745;	<td> Reopen Last Project Group
-<tr><td> &#9745;	<td> Open Home page on start
-<tr><td style="width:4%"> &#9745;	<td> Show startup screen <td style="width:50%"> Можно смотреть процесс загрузки
+<tr><td> ☑	<td> Reopen Last Project Group
+<tr><td> ☑	<td> Open Home page on start
+<tr><td style="width:4%"> ☑	<td> Show startup screen <td style="width:50%"> Можно смотреть процесс загрузки
 
 <tr><th class=subhead colspan=2> General
-<tr><td> &#9745;	<td> Monitor clipboard content within this application only	
-<tr><td> &#9745;	<td> Use Left/Right selection
+<tr><td> ☑	<td> Monitor clipboard content within this application only	
+<tr><td> ☑	<td> Use Left/Right selection
 
 <tr><th class=subhead colspan=2> Reload Documents Modified outside of Altium Designer
-<tr><td> &bull;		<td> Ask User
-<tr><td class=right> &#9745;	<td> Only if Document is modified
+<tr><td> •◉	<td> Ask User
+<tr><td class=right> ☑	<td> Only if Document is modified
 
 <tr><th class=subhead colspan=2> Localization
-<tr><td> &#9744;	<td> Use localized resources
+<tr><td> ☐	<td> Use localized resources		<td> Не использовать перевод интерфейса на системный язык компьютера
 
-<tr><th class=subhead colspan=2> Advanced 		<td> Кнопка справа внизу
+<tr><th class=subhead colspan=2> Advanced 		<td> Кнопка справа внизу, упорядочить по Preference Name
 												<br> Можно смотреть категории All, Modified, Open Beta
-<tr><td> &#9745;	<td> Legacy.MainWindowCaption	<td> Показывать полный путь в заголовке
-<tr><td> &#9745;	<td> LibraryHealth
-<tr><td> &#9745;	<td> PCB.OpenCascadeLatestVersion	<td> Чтобы не выводил прозрачные платы в 3D 
-<tr><td> &#9745;	<td> PCB.FootprintParameters		<td> Использовать параметры в футпринтах
-<tr><td> &#9745;	<td> PCB.LayerDrawingOrder.ProperMultilayer	<td> Раскрашивает ПО в цвет цепи?
-<tr><td> &#9745;	<td> PCB.PasteMask.Percentage	<td> Разрешить установку размера маски пасты в % от площади площадки
+<tr><td> ☐	<td> EDMS.ConnectivityMonitor		<td> Отключить монитор соединения с сервером
+<tr><td> ☑	<td> Legacy.MainWindowCaption		<td> Показывать полный путь в заголовке
+<tr><td> ☑	<td> LibraryHealth
+<tr><td> ☑	<td> MBS.PlaceWire					<td> Разрешить размещать связи в мультиплатных схемах
+<tr><td> 1	<td> PCB.ComponentSelection	
+			<td> 0 legasy mode: combines geometries from all layers exsept the Silkscreen Designator and Comment strings
+			<br> 1 by layer mode: use the geometries from the first of the layers: Courtyard; 3D Body; Silkscreen plus Copper; Copper 
+			<br> 2 by graphic mode: combines the geometries on Courtyard, Silkscreen, 3D Body and Copper. String are excluded.
+
+<tr><td> ☑	<td> PCB.OpenCascadeLatestVersion	<td> Чтобы не выводил прозрачные платы в 3D 
+<tr><td> ☑	<td> PCB.FootprintParameters		<td> Использовать параметры в футпринтах
+<tr><td> ☑	<td> PCB.LayerDrawingOrder.ProperMultilayer	<td> Переходные отверстия не будут скрыты под полигонами или дорожками
+<tr><td> ☑	<td> PCB.PasteMask.Percentage	<td> Разрешить установку размера маски пасты в % от площади площадки
 													<br>(установка в мм тоже работает)
-<tr><td> &#9744;	<td> Schematic.UI.ShowMoreOrLessParameters	<td> Не показывать больше или меньше параметров
-<tr><td> &#9745;	<td> System.UI.IPP.ShowUniqueID
-<tr><td> ? 			<td> UI.DisableFractalMode		<td> Боковые панели не группируются
-<tr><td> &#9744;	<td> UI.UseActiveBar			<td> Отключить ActiveBar в рабочей области
+<tr><td> ☐?	<td> PCB.Text.TTFontSaving			<td> Не сохранять шрифт внутри файла платы
+<tr><td> ☐	<td> Schematic.UI.ShowMoreOrLessParameters	<td> Не показывать больше или меньше параметров
+<tr><td> ☑	<td> System.UI.IPP.ShowUniqueID	<td> Показывать UniqueID в свойствах 
+<tr><td> ☑? 	<td> UI.DisableFractalMode		<td> Панели группируются во вкладках, а не одна над другой
+<tr><td> ☑?	<td> UI.PanelToDoList			<td> Разрешить ToDo List панель
+<tr><td> ☐	<td> UI.UseActiveBar				<td> Запретить ActiveBar в рабочей области
 
 <!--  System - View  —————————————————————————————————————————————————————————-->
 <tr><th colspan=3> <hr>
