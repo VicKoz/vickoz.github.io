@@ -131,24 +131,18 @@ img {cursor: crosshair; margin: .5em}
 /*img {cursor: crosshair; margin: 10px}*/
 img.inline {margin: 0 .5em 0 0}
 
-li {
-	margin: 0;
-	padding: 0.25em;
-}
-ul {
-	list-style: square inside;
-	/* margin: 0.25em; */
-	padding: 0.25em;
-}
-/*ol, ul {margin: .5em .75em; list-style: inside}*/
-ol, ul {margin: .5em 0; padding: 0 1em 0 2.3em; list-style: outside}
-ul.none {
-	list-style: none;
-	margin: 0;
-	padding: 0 1em 0.25em;
-}
+li { margin: 0; padding: 0.25em; }
+
+/* ul { list-style: square inside; padding: 0.25em; } */
+
+/* ol, ul {margin: .5em .75em; list-style: inside} */
+ol, ul { margin: .5em 0; padding: 0 1em 0 2.3em; list-style: square outside }
+
+ul.none { list-style: none; margin: 0; padding: 0 1em 0.25em; }
+
 ul.wide {list-style: none; margin: 0; padding: 0}
-ol ol, ol ul, ul ol, ul ul, tr ul {margin-top: 0; margin-bottom: 0; list-style: none}
+
+ol ol, ol ul, ul ol, ul ul, tr ul { margin-top: 0; margin-bottom: 0; list-style: none }
 
 table {
 	background: #eee; 
