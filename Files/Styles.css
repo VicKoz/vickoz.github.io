@@ -60,7 +60,7 @@ h3 {
 	color: #369; 
 	font-weight: lighter; 
 	margin: 1.0em 0.25em 0.25em; 
-	padding: 0 0;
+	padding: 0.5em 0;
 }
 
 h4 {
@@ -97,8 +97,8 @@ hr {
 p {
 	text-align: justify;
 	text-indent: 1em;
-	margin: 0.25em 0.25em .25em 0.25em;
-	padding: 0 1em;
+	margin: 0.25em 0.25em 0.25em 0.25em;
+	/* padding: 0 1em; */
 }
 
 .att {
@@ -270,7 +270,11 @@ table.preferences {
 		linear-gradient(to bottom, var(--gradstop) 0%, white 8%, white 92%, var(--gradstop) 100%);
 	margin: 0em 0em;
 	overflow-y: auto;
+	/* padding-top: 2px */
+	display: flow-root;
 }
+
+
 
 .foot {
 	background-image: linear-gradient(to bottom, var(--gradstop), white);
@@ -298,8 +302,12 @@ table.preferences {
 	--gradstop: #ddd;
 	--gradline: #aaa;
 	color: black;
-	padding: 0.2em;
+	padding: 0 0.2em;
 	/* margin: 0.2em 0; */
+	/* align-content: start; */		/* ИИ:	Прижимает всю сетку к верху */
+	/* justify-items: stretch; */		/* ИИ:	Растягивает по ширине, но не по высоте */
+	grid-template-rows: auto 1fr;
+	/* align-items: start; */
 }
 
 .main-hline {
@@ -316,7 +324,11 @@ table.preferences {
 	background-image:
 		linear-gradient(to bottom, var(--gradstop) 0%, white 6vh, white 98%, var(--gradstop) 100%);	
 	*/
+	/* padding: 0 1em 1em; */ 
 }
+
+
+
 
 /*  Anchors styles  ____________________________________________________________*/
 
